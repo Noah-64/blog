@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+<% if(locals.storedData){ %>
+    <div class="book-cont">
+    <div class="book6">
+        <div class="book-pri"><b>Category:</b><%=storedData.category %></div>
+        <div class="book-title"><b>Name:</b><%=storedData.name %></div>
+        <div class="book-auth"><b>Info1:</b><%=storedData.info1 %></div>
+        <div class="book-pub"><b>Info2:</b><%=storedData.info2  %></div>
+        <div class="book-pri"><b>Info3:</b><%=storedData.info3 %></div>
+        <div class="book-exp"><b>Overview:</b><%=storedData.ovr %></div>
+    </div>
+    </div>
+    <div class="bttn">
+        <a href="/create" class="bttn-1">Update</a>
+        <a href="/delete" class="bttn-3" onclick="deleteData()">Delete</a>
+    </div>
+    <% }else{ %>
+    <div class="cont">
+        <h1 class="cont-title">Explore The World of Blogspot</h1>
+        <h4 class="cont-exp">Discover, Enjoy, and Share on Blogspot</h4>
+        <a href="/create"><button class="btn" >Create Blog</button></a>
+    </div>
+    <%- include("partials/footer.ejs") %>
+    <% } %> 
+
+
+
+

@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    padding: 10px;
+    color: #e1dddd;
+    float: left;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    float: left;
+    background-color: rgb(88, 87, 87);
+    min-height: 97vh;
+}
+.active{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+    float: left;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #000000;
+    background-color: #e1dddd;
+    font-size: 19px;
+}
+.active:hover{
+    background-color: #e1dddd;
+    color: black;
+    transition: .5s;
+
+ 
+}
+.current-page {
+    background-color: #e1dddd; 
+    color: black; 
+    border-radius: 15px; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* background-color:  #D3D3D3; */
+/* 
+.cont{
+    text-align: center;
+    padding-top: 20px;
+    background-color:  #e1dddd;
+    height: 90vh;
+    color: rgb(88, 87, 87);
+    
+} */
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh; /* Full viewport height */
+    text-align: center; /* Center text within the div */
+    background-color:  #e1dddd;
+    /* color: rgb(88, 87, 87); */
+    color:#000000;
+}
+.cont-title {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.cont-exp {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: rgb(38, 37, 37);
+}
+
+.btn{
+    padding:10px 15px;
+    margin-top: 10px;
+    background-color: rgb(88, 87, 87);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(max-width:900px){
+    .cont-title{
+        font-size: 1.6em;
+    }
+    .cont-exp{
+        font-size: 1.1em;
+    }
+    .title{
+        padding: 8px;
+    }
+    .container{
+        
+        padding: 8px;
+        min-height: 98vh;
+    }
+    .active{
+        padding: 15px;
+    }
+}
+
+.book-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.book1,.book2,.book3,.book4,.book5 {
+    flex: 300px;
+    /* background-color:rgb(173, 167, 167); */
+    background-color: #c1bfbf;
+    margin: 10px;
+    padding: 15px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-heading {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    width: 100%;
+}
+.book-title, .book-auth, .book-pub, .book-pri, .book-exp {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.registration-form {
+    background: rgb(88, 87, 87);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.registration-form input, 
+.registration-form select, 
+.registration-form textarea, 
+.registration-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+     outline: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #e1dddd;
+}
+
+.registration-form button {
+    background-color: #c5c1c1;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+.book6{
+    width: 300px;
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    background-color: #c1bfbf;
+}
+.bttn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+.bttn-1,.bttn-2,.bttn-3{
+    text-decoration: none;
+    padding: 10px 22px;
+    background-color:#c1bfbf;
+    color: #000000;
+    border-radius: 5px;
+}
